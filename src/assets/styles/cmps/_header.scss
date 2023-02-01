@@ -1,24 +1,82 @@
-.header{
-    background-color: green;
-    height: 48px;
+.header {
+    margin-top: 4.5em;
+    height: fit-content;
     @include flex-space-between;
-    
-    .nav-bar{
-        
-        background-color: rgb(128, 0, 0);
+
+    .nav-bar {
         @include flex-space-between;
 
-        .logo{
-            margin-right: 4.375em;
+        .logo {
+            display: flex;
+            align-items: center;
+            img{
+                height: 2em;
+            }
         }
 
-        .page-link{
-            @include flex-center;
+        .page-link {
+           display: none;
+        }
+    }
+
+    .contact-us-btn {
+        display: none;
+    }
+
+    .burger-logo{
+        >*{
+            height: 1em
+        }
+    }
+
+    @include for-normal-layout {
+        @include flex-space-between;
+        margin-top: 4.5em;
+
+        .nav-bar {
+            @include flex-space-between;
+
+            .logo {
+                display: flex;
+                align-items: center;
+                margin-right: 4.375em;
+                img{
+                    height: 2.5em;
+                }
+            }
+
+            .page-link {
+                @include flex-center;
+
+                >* {
+                    font-size: 1.125em;
+                    color: $white;
+                    line-height: 28px;
+                }
+
+                :first-child {
+                    margin-right: 2.5em
+                }
+            }
+
             
-            :first-child{
-                        margin-right:2.5em
-                    }
+        }
+        
+        .contact-us-btn {
+            @include flex-center;
+            border: $white solid;
+            border-radius: 25px;
+            font-size: 1.125em;
+            padding: 0.625em 2em;
+            color: $white;
+            @include bold600
+            
+        }
+
+        .burger-logo{
+            display: none;
         }
         
     }
+
 }
