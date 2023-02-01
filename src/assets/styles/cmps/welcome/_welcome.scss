@@ -1,0 +1,39 @@
+.welcome{
+    background-color: $welcome-bgc;
+    height: 567px;
+    grid-template-rows:min-content;
+
+    .img-bottom{
+        margin-top:130px ;
+        grid-column: 1/-1;
+        padding: 0em 0.5em;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+       
+
+    }
+    .imgBottom{
+        // height: 100px;
+        width: 100%;
+
+    }
+
+    @include for-normal-layout {
+        height: 700px;
+        .img-bottom{
+            margin-top:8.9em ;
+            height: fit-content;    
+        }
+        .imgBottom{
+            margin-top:100px ;
+            height: 100px;
+            width: 365px;
+    
+        }
+
+
+    }
+}

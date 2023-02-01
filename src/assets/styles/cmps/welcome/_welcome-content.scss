@@ -1,0 +1,89 @@
+.welcome-content {
+    // margin-top: 8.125em;
+    height: fit-content;
+
+
+    img {
+       display: none;
+    }
+
+    .content {
+        @include flex-space-between;
+        flex-direction: column;
+        color: $white;
+
+        .statement {
+            font-size: 36px;
+            @include bold800;
+            line-height: 36px;
+            padding: 0 24px ;
+            text-align: center;
+            margin-bottom: 18px;
+
+            &::first-letter {
+                text-transform: capitalize;
+            }
+
+            &:after {
+                content: " talent";
+                color: $contact-us-bgc;
+            }
+        }
+
+        .explanation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .line {
+               display: none;
+            }
+
+            .text {
+                text-align: center;
+                font-size: 13px;
+                @include bold600;
+                line-height: 28px;
+            }
+
+        }
+    }
+
+    @include for-normal-layout {
+
+        img {
+            grid-column: 1;
+            width: 200px;
+            overflow: hidden;
+            position: relative;
+            right: 100px;
+        }
+
+        .content {
+            max-height: 200px;
+            flex-direction: row;
+        }
+
+        .statement {
+            font-size: 400px;
+            text-align: left;
+        }
+        
+
+        .explanation {
+            height: 200px;
+            width: 445px;
+
+            .line {
+                display: block;
+                background-color: $line-center-content-welcome;
+                height: 0.25em;
+                width: 3em;
+            }
+
+
+        }
+
+    }
+}

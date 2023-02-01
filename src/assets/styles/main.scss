@@ -16,9 +16,15 @@
 @import "views/home-page";
 
 // Components
-@import "cmps/header";
-@import "cmps/welcome";
+    // welcome
+@import "cmps/welcome/welcome";
+@import "cmps/welcome/header";
+@import "cmps/welcome/welcome-content";
+
+// intro 
 @import "cmps/intro";
+
+// expricne 
 @import "cmps/experience";
 @import "cmps/contact-us";
 @import "cmps/footer";

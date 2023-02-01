@@ -1,7 +1,10 @@
 .header {
-    margin-top: 4.5em;
+    margin-top: 48px;
     height: fit-content;
     @include flex-space-between;
+    margin-bottom: 70px;
+
+    
 
     .nav-bar {
         @include flex-space-between;
@@ -32,6 +35,7 @@
     @include for-normal-layout {
         @include flex-space-between;
         margin-top: 4.5em;
+        margin-bottom: 8.4375em;
 
         .nav-bar {
             @include flex-space-between;

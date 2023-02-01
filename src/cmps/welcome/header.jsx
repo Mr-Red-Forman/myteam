@@ -1,5 +1,5 @@
-import logo from '../assets/img/logo.svg'
-import iconHamburger from '../assets/img/icon-hamburger.svg'
+import logo from '../../assets/img/logo.svg'
+import iconHamburger from '../../assets/img/icon-hamburger.svg'
 
 export function Header() {
     return (
