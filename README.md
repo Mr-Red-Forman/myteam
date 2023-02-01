@@ -1,2 +1,3 @@
-# Coding Academy
-## React Starter
+my team project perfect pixel
+
+coded by Yarden Zeron
