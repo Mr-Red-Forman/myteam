@@ -1,0 +1,24 @@
+.header{
+    background-color: green;
+    height: 48px;
+    @include flex-space-between;
+    
+    .nav-bar{
+        
+        background-color: rgb(128, 0, 0);
+        @include flex-space-between;
+
+        .logo{
+            margin-right: 4.375em;
+        }
+
+        .page-link{
+            @include flex-center;
+            
+            :first-child{
+                        margin-right:2.5em
+                    }
+        }
+        
+    }
+}
