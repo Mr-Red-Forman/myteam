@@ -9,7 +9,6 @@ export function WelcomeContent() {
             <div className="content">
                 <div className="statement">
                     find your best
-
                 </div>
                 <div className="explanation">
                     <div className="line"></div>

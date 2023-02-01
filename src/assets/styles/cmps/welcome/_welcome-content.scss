@@ -1,5 +1,4 @@
 .welcome-content {
-    // margin-top: 8.125em;
     height: fit-content;
 
 
@@ -13,12 +12,12 @@
         color: $white;
 
         .statement {
-            font-size: 36px;
+            font-size: 40px;
             @include bold800;
-            line-height: 36px;
-            padding: 0 24px ;
+            line-height: 40px;
+            padding: 0 44px ;
             text-align: center;
-            margin-bottom: 18px;
+            margin-bottom: 19px;
 
             &::first-letter {
                 text-transform: capitalize;
@@ -53,6 +52,7 @@
     @include for-normal-layout {
 
         img {
+            display: block;
             grid-column: 1;
             width: 200px;
             overflow: hidden;
@@ -63,27 +63,42 @@
         .content {
             max-height: 200px;
             flex-direction: row;
-        }
 
-        .statement {
-            font-size: 400px;
-            text-align: left;
-        }
-        
+            .statement {
 
-        .explanation {
-            height: 200px;
-            width: 445px;
-
-            .line {
-                display: block;
-                background-color: $line-center-content-welcome;
-                height: 0.25em;
-                width: 3em;
+                font-size: 100px;
+                text-align: left;
+                line-height: 100px;
+                padding: 0;
+                width: 625px;
+                margin: 0;
+                
             }
 
+            .explanation {
+                height: 200px;
+                width: 405px;
+    
+                .line {
+                    display: block;
+                    background-color: $line-center-content-welcome;
+                    height: 0.25em;
+                    width: 3em;
+                }
 
+                .text {
+                    text-align: left;
+                    font-size: 18px;
+                    @include bold600;
+                    line-height: 28px;
+                }
+    
+    
+            }
         }
+
+        
+
 
     }
 }
